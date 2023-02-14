@@ -1,0 +1,57 @@
+.section-about {
+  background-color: $color-tertiary-dark;
+  padding: 25rem 0;
+  margin-top: -20vh;
+  @include respond(tap-land) {
+    height: 160rem;
+    padding: 40rem 0 25rem;
+  }
+}
+
+.section-features {
+  color: $color-black;
+  padding: 20rem 0;
+  background-color: $color-white;
+  margin-top: -10vh;
+  transform: skewY(-5deg);
+
+  & > * {
+    transform: skewY(5deg);
+  }
+}
+
+.section-cards {
+  background-color: $color-tertiary-dark;
+  padding: 30rem 0 15rem;
+  margin-top: -16vh;
+  height: 120rem;
+  @include respond(tap-land) {
+    height: 160rem;
+  }
+
+}
+
+.section-courses{
+  background-color: $color-white;
+  padding: 20rem 0;
+
+
+  margin-top: -10vh;
+  transform: skewY(-5deg);
+
+
+  & > *{
+    transform: skewY(5deg);
+  }
+}
+
+.section-contact{
+  background-color: $color-tertiary-dark;
+  height: 99vh;
+  margin-top: 10rem;
+  padding-top: 10rem;
+
+  @include respond(tap-land) {
+    height: 100vh;
+  }
+}

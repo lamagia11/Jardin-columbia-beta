@@ -1,0 +1,29 @@
+.header {
+  height: 115vh;
+
+  background-image: linear-gradient(to right bottom, rgba($color-white,1), rgba($color-white, 1));
+
+
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%);
+  color: $color-tertiary-dark;
+
+  @include respond(tap-port){
+    height: 95vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+  }
+
+  &__logo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 50rem;;
+    height: auto;
+
+    
+  }
+}

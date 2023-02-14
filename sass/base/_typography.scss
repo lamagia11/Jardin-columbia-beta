@@ -1,0 +1,57 @@
+body {
+  font-family: "Gaegu", cursive;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $color-white;
+
+}
+
+.heading-primary {
+  width: 50rem;
+  height: auto;
+  backface-visibility: hidden;
+
+}
+
+.heading-secondary{
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  color: $color-white;
+  letter-spacing: 2px;
+  transition: all .2s;
+
+  @include respond(tap-port) {
+    font-size: 3rem;
+  }
+
+  @include respond (phone) {
+    font-size: 2.5rem;
+  }
+
+}
+
+
+
+.heading-tertiary{
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph{
+  font-size: $default-font-size;
+  &:not(:last-child){
+    margin-bottom: 3rem;
+  }
+}
+
+.heading-color-blue{
+  color: $color-tertiary-dark;
+}
+
+.heading-color-black{
+  color: $color-black;
+}

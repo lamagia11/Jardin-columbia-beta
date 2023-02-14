@@ -1,0 +1,113 @@
+.contact{
+
+  &__heading{
+    font-weight: 700;
+    @include respond(tap-land) {
+      text-align: center !important;
+    }
+
+  }
+
+
+  &__details{
+    color: $color-white;
+    ul{
+      list-style: none;
+      li{
+        font-size: 2rem;
+        padding: 0.7rem;
+      }
+
+      a,
+      &:visited{
+        text-decoration: none;
+        color: $color-white;
+        border: none;
+      }
+
+    }
+
+    &--icon{
+      color: $color-white;
+      padding-right: 1rem;
+    }
+
+  }
+  @include respond(tap-land) {
+    text-align: center !important;
+  }
+  @include respond(tap-port) {
+    text-align: center !important;
+  }
+}
+
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 52rem;
+  height: auto;
+
+  @include respond(tap-land) {
+    width: 42rem;
+    height: auto;
+    margin: auto;
+    text-align: center;
+  }
+  @include respond(tap-port) {
+    width: 42rem;
+    height: auto;
+    margin: auto;
+    text-align: center;
+  }
+  @include respond(phone) {
+    width: 22rem;
+    height: 22rem;
+    margin: auto;
+    text-align: center;
+  }
+
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 52rem;
+  height: auto;
+
+  @include respond(tap-land) {
+    width: 42rem;
+    height: auto;
+    margin: auto;
+  }
+  @include respond(tap-port) {
+    width: 42rem;
+    height: auto;
+    margin: auto;
+  }
+  @include respond(phone) {
+    width: 22rem;
+    height: 22rem;
+    margin: auto;
+  }
+}
+
+.gmap_iframe {
+  height: 400px !important;
+
+  @include respond(tap-land) {
+    height: 300px;
+    height: auto;
+    margin: auto;
+  }
+  @include respond(tap-port) {
+    height: 300px;
+    height: auto;
+    margin: auto;
+  }
+  @include respond(phone) {
+    width: 22rem;
+    height: auto;
+    margin: auto;
+  }
+}
